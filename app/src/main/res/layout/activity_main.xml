@@ -25,7 +25,7 @@
     <EditText
         android:id="@+id/input_username"
         android:layout_marginTop="60dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/custom_edittextbg"
         android:textColorHint="@color/white"
         android:hint="Username"
         android:layout_marginStart="24dp"
@@ -44,7 +44,7 @@
     <EditText
         android:id="@+id/input_email"
         android:layout_marginTop="5dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/custom_emailbg"
         android:textColorHint="@color/white"
         android:hint="Email"
         android:paddingLeft="20dp"
@@ -61,7 +61,7 @@
     <EditText
         android:id="@+id/input_password"
         android:layout_marginTop="5dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/custom_passwordbg"
         android:textColorHint="@color/white"
         android:hint="Password"
         android:paddingLeft="20dp"
