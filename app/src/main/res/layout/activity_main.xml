@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/green_light">
+
+
+    <TextView
+        android:id="@+id/text_logo"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/input_username"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_bg"
+        android:textColorHint="@color/white"
+        android:hint="Username"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/input_username"
+        app:layout_constraintStart_toStartOf="@id/input_username"
+        app:layout_constraintTop_toBottomOf="@id/input_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_bg"
+        android:textColorHint="@color/white"
+        android:hint="Password"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/input_email"
+        app:layout_constraintStart_toStartOf="@id/input_email"
+        app:layout_constraintTop_toBottomOf="@id/input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_btn"
+        android:drawableEnd="@drawable/ic_baseline"
+        android:hint="NEXT"
+        android:textColorHint="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/input_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/input_password"
+        app:layout_constraintTop_toBottomOf="@id/input_password" />
+
+    <View
+        android:id="@+id/view_first"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/green_light_3"
+        app:layout_constraintBottom_toTopOf="@+id/input_username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_logo"
+        app:layout_constraintVertical_bias="0.508" />
+    
+    <ImageView
+        android:id="@+id/dog_img"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@id/next_button"
+        app:layout_constraintStart_toStartOf="@id/next_button"
+        app:layout_constraintTop_toBottomOf="@id/next_button"
+        android:src="@drawable/ic_dog"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/text_trivia"
+        app:layout_constraintEnd_toEndOf="@id/dog_img"
+        app:layout_constraintStart_toStartOf="@id/dog_img"
+        app:layout_constraintTop_toBottomOf="@id/dog_img"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
